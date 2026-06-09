@@ -2,23 +2,65 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css"> <title>Iniciar Sesión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | AVALA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="brand-logo">AVALA</div>
+        <div class="nav-actions">
+            <a href="index.html" class="link-login">Volver al Inicio</a>
+        </div>
+    </nav>
+
     <main class="auth-container">
+        <p class="breadcrumb">Inicio > Cuentas > Iniciar Sesión</p>
+
         <div class="auth-box">
             <h2>Bienvenido</h2>
+            <p class="auth-subtitle">Ingresá tus credenciales para acceder a tus solicitudes y pagos protegidos.</p>
+            
             <form class="auth-form" onsubmit="event.preventDefault(); window.location.href='index.html';">
                 <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" class="urgency-input" placeholder="usuario@email.com">
+                    <label>Email institucional o personal</label>
+                    <input type="email" class="urgency-input" placeholder="usuario@email.com" required>
                 </div>
+                
                 <div class="input-group">
                     <label>Contraseña</label>
-                    <input type="password" class="urgency-input" placeholder="••••••">
+                    <input type="password" class="urgency-input" placeholder="••••••••" required>
                 </div>
-                <button type="submit" class="btn-primary btn-full">Ingresar</button>
+                
+                <button type="submit" class="btn-primary btn-full">Ingresar a la Plataforma</button>
             </form>
+        </div>
+
+        <div class="auth-context-panel">
+            <h3>Tu cuenta protegida</h3>
+            <p class="context-subtitle">Ecosistema digital de contratación de oficios con auditoría algorítmica.</p>
+            
+            <div class="context-step">
+                <div class="context-step-num">1</div>
+                <div class="context-step-text">
+                    <strong>Identidad Validada</strong>
+                    <span>Todos los prestadores de la grilla cuentan con DNI respaldado para asegurar la integridad presencial.</span>
+                </div>
+            </div>
+
+            <div class="context-step">
+                <div class="context-step-num">2</div>
+                <div class="context-step-text">
+                    <strong>IA Árbitro Activa</strong>
+                    <span>Los presupuestos y desvíos por imprevistos técnicos son validados mediante análisis de evidencia fotográfica.</span>
+                </div>
+            </div>
+
+            <div class="context-security-note">
+                <strong>Garantía de Fondos de 48hs</strong>
+                El dinero de la mano de obra permanece retenido de forma segura en nuestro sistema Escrow hasta que confirmás la conformidad del arreglo.
+            </div>
         </div>
     </main>
 </body>
